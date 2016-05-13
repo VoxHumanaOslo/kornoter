@@ -37,7 +37,7 @@ soprano = \relative c {
 	\bar ".|:"
 	| f2. | e | d~ | d4 g,4. a8 | bes2 e4 
 	| e2 d4 | d2. | c4 r r | a'2. | g | f~ 
-	| f4 g4. f8 | e4 r e | f r bes, | c2.~ | c4 r r
+	| f4 g4. f8 | e4 r e | f r b, | c2.~ | c4 r r
 	\bar ":|.|:"
 	| a8 r d2~ | d4 c4. a8 | bes2. | R1*3/4
 	| g8 r e'2~ | e4 d4. b8 | c2. | R1*3/4
@@ -53,7 +53,7 @@ soprano = \relative c {
 	| f f f | f r r | d d d | d r r | e8 e e4 e | e r r
 	\bar ":|.|:"
 	\key f \major
-	| c2.~ | c4 a bes | c2. | d2( e4) | f2 e4 | g f d | d2. | c2 r4 
+	| c2.~ | c4 a bes | c2. | d2( e4) | f2 e4 | g( f) d | d2. | c2 r4 
 	| e2.~ | e4 d bes | e2.~ | e4 d bes | bes a bes | d c b | d2. | c2 r4 
 	| c2.~ | c4 a bes | c2. | f2 r4 | a2 e4 | g2 f4 | e2. | d2 r4
 	| cis2 d4 | e2 d4 | f2 a,4 | bes2 c4 | d2.( | e) | f~ | f4 r r
@@ -62,7 +62,7 @@ soprano = \relative c {
 }
 
 alto = \relative c {
-	| f4 a d | c r a | f r d | c r r | R1*3/4 | r4 r c' | c2.~ | c2 r4
+	| f4 a d | c r a | f r d | c r\fermata r | R1*3/4 | r4 r c' | c2.~ | c2 r4\fermata
 	\bar ".|:"
 	| r c2 | r4 c2 | bes2.~ | bes4 r r | r r c | c2 c4 | b2. | c4 r r
 	| r c2 | r4 cis2 | d2.~ | d4 d4. d8 | c4 r c | b r g | g g g | g r r
@@ -108,8 +108,8 @@ tenor = \relative c {
 }
 
 bass = \relative c {
-	| f4 a d | c r a | f r d | c r r
-	| R1*2*3/4 | r4 r c | c2 r4
+	| f4 a d | c r a | f r d | c r\fermata r
+	| R1*2*3/4 | r4 r c | c2 r4\fermata
 	\bar ".|:"
 	| r f2 | r4 c2 | r4 bes4. bes8 | bes4 r r | r r c4 | c2 e4 | f2. | f4 a c | f,2. e
 	| r4 d4. d8 | d4 r g | g2. | g, | c4 c c | c r r
@@ -135,16 +135,104 @@ bass = \relative c {
 
 lyrSoprano = \lyricmode {
 	Vad ska' vi sjung -- a? Vän -- ner, säg!
+	En vals!
+	Kom, kom, kom skö -- na mö i val -- sens vir -- vel.
+	Hör, hör, hör har -- mo -- ni -- ens lju -- va klang!
+
+	Tryck dig in -- till mig, vid mitt trog -- na bröst
+	skall du fin -- na skydd mot fa -- ran,
+	där skall du ock fin -- na tröst.
+
+	Här -- ligt och skönt, här -- ligt och skönt
+	att svä -- va så hand ut -- i hand, 
+	högt som i moln, högt som i moln, hän ö -- ver jord och dyst -- ra ting. 
+	E -- vigt jag vill, e -- vigt jag vill löst i -- från band, bo -- jor och band,
+	svä -- va så lätt, svä -- va så lätt på 
+	vin -- dens fläkt u -- ni -- ver -- sum kring.
+
+	Känn, hur mitt hjär -- ta spräng -- a vill sin bo -- ning.
+	Hör tick, tick, hör tick, tick, 
+	klap -- pan -- de ber om för -- sko -- ning. Lind -- ra dess smär -- ta!
+
+	Kan du mig för -- sa -- ka? 
+	Vill du bli min ma -- ka, ja, min ma -- ka?
+	%Tick, tick, tick, tick, tick, tick, tick, tick, 
+	%klap -- pan -- de 	
+
 
 }
 
 lyrAlto = \lyricmode {
+	Vad ska' vi sjung -- a? Vän -- ner, säg!
+	En vals!
+	Kom, kom, kom i val -- sens vir -- vel.
+	Hör, hör, hör har -- mo -- ni -- ens lju -- va klang, lju -- va klang!
+
+	Tryck dig in -- till mig, vid mitt trog -- na bröst 
+	skall du fin -- na skydd och tröst, fin -- na tröst, fin -- na tröst.
+	Här -- ligt och skönt, här -- ligt och skönt
+	att svä -- va så hand ut -- i hand, 
+	högt som i moln, högt som i moln, hän ö -- ver jord och dyst -- ra ting. 
+	E -- vigt jag vill, e -- vigt jag vill löst i -- från band, bo -- jor och band,
+	svä -- va så lätt, svä -- va så lätt på 
+	vin -- dens fläkt u -- ni -- ver -- sum kring.
+	Känn, hur mitt hjär -- ta spräng -- a vill sin bo -- ning.
+	Tick, tick, tick, tick, tick, tick, tick, tick, 
+	klap -- pan -- de ber om för -- sko -- ning. Lind -- ra dess smär -- ta!
+
+	Kan du mig för -- sa -- ka? 
+	Vill du bli min ma -- ka, ja, min ma -- ka?
+
 }
 
 lyrTenor = \lyricmode {
+	Vad ska' vi sjung -- a? Vän -- ner, säg!
+	En vals!
+	Kom, kom skö -- na mö i val -- sens vir -- vel.
+	Hör, hör har -- mo -- ni -- ens lju -- va klang!
+
+	Tryck dig in -- till mig, vid mitt trog -- na bröst 
+	skall du fin -- na skydd och tröst, fin -- na tröst, fin -- na tröst.
+
+	Här -- ligt och skönt, här -- ligt och skönt
+	att svä -- va så hand ut -- i hand, 
+	högt som i moln, högt som i moln, hän ö -- ver jord och dyst -- ra ting. 
+	E -- vigt jag vill, e -- vigt jag vill löst i -- från band, bo -- jor och band,
+	svä -- va så lätt, svä -- va så lätt på 
+	vin -- dens fläkt u -- ni -- ver -- sum kring.
+
+	Känn, hur mitt hjär -- ta, känn, hur mitt hjär -- ta 
+	spräng -- a vill sin bo -- ning.
+	Tick, tick, tick, tick, tick, tick, tick, tick, 
+	ber om för -- sko -- ning. Lind -- ra, 
+	o lind -- ra dess smär -- ta, lind -- ra dess smär -- ta!
+
+	Kan du mig för -- sa -- ka? 
+	Vill du bli min ma -- ka, ja, vill du bli min ma -- ka?
 }
 
 lyrBass = \lyricmode {
+	Vad ska' vi sjung -- a? Vän -- ner, säg!
+	En vals!
+	Kom, kom skö -- na mö i val -- sens vir -- vel.
+	Kom og hör, hör har -- mo -- ni -- ens lju -- va klang, lju -- va klang!
+
+	Tryck dig tätt in -- till mig, vid mitt trog -- na bröst 
+	skall du fin -- na skydd och tröst, fin -- na tröst, fin -- na tröst.
+
+	Här -- ligt och skönt, att så svä -- va hand i hand, 
+	högt som i moln ö -- ver jor -- dens dyst -- ra ting. 
+	E -- vigt jag vil -- le löst från bo -- jor och band, 
+	svä -- va på vin -- dens fläk -- tar u -- ni -- ver -- sum kring.
+
+	Känn, hur mitt hjär -- ta, känn, hur mitt hjär -- ta 
+	spräng -- a vill sin bo -- ning.
+	Tick, tick, tick, tick, tick, tick, tick, tick, 
+	ber om för -- sko -- ning. Lind -- ra, 
+	o lind -- ra dess smär -- ta, lind -- ra dess smär -- ta!
+
+	Kan du mig för -- sa -- ka? 
+	Vill du bli min ma -- ka, ja, vill du bli min ma -- ka?
 }
 
 \score {
