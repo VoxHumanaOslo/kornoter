@@ -24,21 +24,30 @@
 }
 	}
 
+lyricFirstTenor = \lyricmode {
+  \skip 4
+  \skip 4
+  \skip 4
+  om lys __ me -- dis -- ter
+  Om din gra -- tie __ 
+  san -- ger 
+}
+
 lyricSecondTenor = \lyricmode {
-  Pøl -- se -- skind om lys me -- dis -- ter, 
+  Pøl -- se -- skind om lys me -- dis -- ter,
   glin -- sen -- de av fed -- me og be -- hag!
 
-  % Med 
-  fedt -- os -- dam -- pen om din is -- ter, 
+  % Med
+  fedt -- os -- dam -- pen om din is -- ter,
   lig -- ger og eg -- ger oss i -- dag!
 
   Se, nu sti -- ger du av fat -- tet!
-  Se, nu sti -- ger du 
-  hyl -- let i små -- tar -- mer, kjøtt av svin, 
+  Se, nu sti -- ger du
+  hyl -- let i små -- tar -- mer, kjøtt av svin,
   om din gra -- ti -- e san -- ger -- pra -- tet!
   o -- ver dig all kvis -- tens brøl og hvin!
 
-  Al -- le brø -- dre, lyst -- ne, plum -- pe! 
+  Al -- le brø -- dre, lyst -- ne, plum -- pe!
   Bøi -- er Jer for hen -- de, hver i -- sær!
 
   Pøl -- se løft din rum -- pe!
@@ -46,7 +55,7 @@ lyricSecondTenor = \lyricmode {
 
   E -- ven -- ty -- rets mun -- tre slutt er nær!
 
-  Pøl -- se -- skind om lys me -- dis -- ter, 
+  Pøl -- se -- skind om lys me -- dis -- ter,
   pøl -- se -- skind om lys me -- dis -- ter!
 
   Pøl -- se -- skind! Pøl -- se -- skind!
@@ -54,13 +63,17 @@ lyricSecondTenor = \lyricmode {
 
 	PartPOneVoiceOne =  \relative b {
 	  \autoBeamOff
-	  \voiceOne 
+	  \voiceOne
 	  \clef "treble_8" \key g \major \time 3/4 | % 1
-	  \tempo "Andante sostenuto" 4=100 
-	  b2\( a4 | % 2
-	  c2 b4 | % 3
-	  e4( fis4 g8) d8 | % 4
-	  d4.( c8) b4\) | % 5
+	  \tempo "Andante sostenuto" 4=100
+
+
+	  \override PhrasingSlur.outside-staff-priority=#999
+
+	  b2\(^\p a4 | % 2
+	  c2 b4^\< | % 3
+	  e4(\! fis4 g8) d8 | % 4
+	  d4.(^\> c8)\! b4\) | % 5
 	  a8. a16 a4 b4 \break | % 6
 	  d4 c4 b8^\> e8\! | % 7
 	  fis2.^\pp ~ | % 8
@@ -74,7 +87,7 @@ lyricSecondTenor = \lyricmode {
 	  fis2 e4^\> | % 16
 	  d2\!\) r4 | % 17
 	  R2. \break | % 18
-	  
+
 	  e,8.^\markup { \italic { poco piu mosso } } e16 a8 b8^\< c8 d8\! | % 19
 	  e2 e8 r8 | \barNumberCheck #20
 	  e,8.^\< e16 a8[ b8] c8 e8 | % 21
@@ -127,7 +140,7 @@ lyricSecondTenor = \lyricmode {
 	PartPTwoVoiceOne =  \relative g {
 	  \autoBeamOff
 	  \voiceTwo
-	  \clef "treble_8" \key g \major \time 3/4 
+	  \clef "treble_8" \key g \major \time 3/4
 	  g2 fis4 | % 2
 	  a2 g4 | % 3
 	  c4( d4) g,4 | % 4
@@ -266,8 +279,9 @@ lyricSecondTenor = \lyricmode {
 	PartPFourVoiceOne =  \relative g, {
 	  \autoBeamOff
 	  \voiceTwo
-	  \clef "bass" \key g \major \time 3/4 
-	  g4(\( b4) d4 | % 2
+	  \clef "bass" \key g \major \time 3/4
+	  \override PhrasingSlur.outside-staff-priority=#999
+	  g4(\(\pp b4) d4 | % 2
 	  a4( c4) e4 | % 3
 	  c2 b4 | % 4
 	  a4( d4) g,4\) | % 5
@@ -337,20 +351,27 @@ lyricSecondTenor = \lyricmode {
 	% The score definition
 	\score {
 	  \new StaffGroup <<
+		\new Lyrics \with { alignAboveContext = "staff" } { }
+
+		\new Lyrics = "firstTenor" \with {
+		  % lyrics above a staff should have this override
+		  \override VerticalAxisGroup.staff-affinity = #DOWN
+		}
 		\new Staff <<
 		  \set Staff.instrumentName = "Tenor"
 		  \set Staff.shortInstrumentName = "T."
-		  \context Staff << 
+		  \context Staff <<
 			\accidentalStyle modern-voice-cautionary
-			\context Voice = "PartPOneVoiceOne" { \PartPOneVoiceOne }
-			\context Voice = "PartPTwoVoiceOne" { \PartPTwoVoiceOne }
-			\context Lyrics = one \lyricsto "PartPTwoVoiceOne" \lyricSecondTenor
+			\new Voice = "PartPOneVoiceOne" { \PartPOneVoiceOne }
+			\new Voice = "PartPTwoVoiceOne" { \PartPTwoVoiceOne }
+			\context Lyrics = "firstTenor" { \lyricsto "PartPOneVoiceOne" \lyricFirstTenor }
+			\new Lyrics { \lyricsto "PartPTwoVoiceOne" \lyricSecondTenor }
 		  >>
 		>>
 		\new Staff <<
 		  \set Staff.instrumentName = "Bass"
 		  \set Staff.shortInstrumentName = "B."
-		  \context Staff << 
+		  \context Staff <<
 			\accidentalStyle modern-voice-cautionary
 			\context Voice = "PartPThreeVoiceOne" { \PartPThreeVoiceOne }
 			\context Voice = "PartPFourVoiceOne" { \PartPFourVoiceOne }
@@ -360,4 +381,3 @@ lyricSecondTenor = \lyricmode {
 	  \layout {}
 	  \midi {}
 	}
-
