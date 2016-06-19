@@ -5,3 +5,6 @@
 *.log
 *~
 *.swp
+
+# Include these
+!original.pdf
