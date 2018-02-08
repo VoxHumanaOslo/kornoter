@@ -5,6 +5,7 @@
 *.log
 *~
 *.swp
+*.DS_Store
 
 # Include these
 !original.pdf
