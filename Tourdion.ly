@@ -1,5 +1,5 @@
 \version "2.18.2"
-\language "italiano"
+\language "english"
 
 \header {
     title = "Tourdion"
@@ -13,100 +13,100 @@
 }
 
 global = {
-    \key mi \dorian
+    \key e \dorian
     \numericTimeSignature
     \time 3/2
     \dynamicUp
 }
 
-soprano = \relative do'' {
+soprano = \relative c'' {
     \global
     
-    mi,4 fad sol la sol fad |
-    mi2. fad4 sol la |
-    si la sol sol la fad |
-    sol2 (fad4 mi) re2 | \break
-    mi4 fad sol la sol fad |
-    mi2 sol fad |
-    mi1 re2 |
-    mi1. \bar ":|.|:"
+    e,4 fs g a g fs |
+    e2. fs4 g a |
+    b a g g a fs |
+    g2 (fs4 e) d2 | \break
+    e4 fs g a g fs |
+    e2 g fs |
+    e1 d2 |
+    e1. \bar ":|.|:"
     
-    si'2.\fff la4 si do |
-    si1 si2 | \break
-    re4 do si la sol fad |
-    sol2. (fad4) mi2 |
-    si'2. la4 si do |
-    si2 la4 \(sol\) fad2 |
-    mi1 re2 | 
-    mi1. | \bar ":|."
+    b'2.\fff a4 b c |
+    b1 b2 | \break
+    d4 c b a g fs |
+    g2. (fs4) e2 |
+    b'2. a4 b c |
+    b2 a4 \(g\) fs2 |
+    e1 d2 | 
+    e1. | \bar ":|."
   
 }
 
-alto = \relative do' {
+alto = \relative c' {
     \global
     
-    si1 si2 |
-    mi1 mi2 |
-    re1 mi2 |
-    mi la1 |
-    sol mi2 |
-    si4 \(la si dod\) re2 |
-    si si1 |
-    si1. |
+    b1 b2 |
+    e1 e2 |
+    d1 e2 |
+    e a1 |
+    g e2 |
+    b4 \(a b cs\) d2 |
+    b b1 |
+    b1. |
     
-    sol'1\fff sol2 |
-    sol1 sol2 |
-    fad1 fad2 |
-    mi1 mi2 |
-    re1 re2 |
-    re1 re2 |
-    si si1 |
-    mi1. |
+    g'1\fff g2 |
+    g1 g2 |
+    fs1 fs2 |
+    e1 e2 |
+    d1 d2 |
+    d1 d2 |
+    b b1 |
+    e1. |
   
 }
 
-tenor = \relative do' {
+tenor = \relative c' {
     \global
     
-    sol1 mi2 | 
-    si'1 si2 |
-    si si do |
-    si1 la2 |
-    si1 si2 |
-    sol1 la2 |
-    sol fad4 (mi fad2) |
-    mi1. |
+    g1 e2 | 
+    b'1 b2 |
+    b b c |
+    b1 a2 |
+    b1 b2 |
+    g1 a2 |
+    g fs4 (e fs2) |
+    e1. |
     
-    mi'1\fff mi2 |
-    re1 re2 |
-    re1 re2 |
-    si1 si2 |
-    si1 si2 |
-    si1 la2 |
-    sol fad1 |
-    mi1. |
+    e'1\fff e2 |
+    d1 d2 |
+    d1 d2 |
+    b1 b2 |
+    b1 b2 |
+    b1 a2 |
+    g fs1 |
+    e1. |
 }
 
-bass = \relative do {
+bass = \relative c {
     \global
     
-    mi1 mi2 |
-    mi1 mi2 |
-    sol si la |
-    mi fad1 |
-    mi mi2 |
-    mi1 re2 |
-    mi si1 |
-    mi1. |
+    e1 e2 |
+    e1 e2 |
+    g b a |
+    e fs1 |
+    e e2 |
+    e1 d2 |
+    e b1 |
+    e1. |
     
-    mi1\fff mi2 |
-    sol1 sol2 |
-    re1 re2 |
-    mi1 mi2 |
-    sol1 sol2 |
-    sol1 re2 |
-    mi si1 |
-    mi1. | \mark "D.C."
+    e1\fff e2 |
+    g1 g2 |
+    d1 d2 |
+    e1 e2 |
+    g1 g2 |
+    g1 d2 |
+    e b1 |
+    e1. | \mark "D.C."
   
 }
 

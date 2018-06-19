@@ -1,5 +1,5 @@
 \version "2.18.2"
-\language "italiano"
+\language "english"
 
 \header {
     title = "Dans, drikk med oss"
@@ -13,63 +13,63 @@
 }
 
 global = {
-    \key do \major
+    \key c \major
     \time 4/4
 }
 
-soprano = \relative do'' {
+soprano = \relative c'' {
     \global
     
-    do4 sol8. fa16 mi4~ mi8 do16 (re) |
-    mi8 sol sol [fad] sol4 sol | \break
-    la si do4. re8 |
-    mi [do] do si do4. sol8 |
-    do8 si16 (la) sol (fa) mi (fa) mi4~ mi8 do16 (re) | \break
-    mi8 sol sol [fad] sol4. sol8 |
-    la4 si do4. re8 |
-    mi [do] do si do4 do | \bar "|."
+    c4 g8. f16 e4~ e8 c16 (d) |
+    e8 g g [fs] g4 g | \break
+    a b c4. d8 |
+    e [c] c b c4. g8 |
+    c8 b16 (a) g (f) e (f) e4~ e8 c16 (d) | \break
+    e8 g g [fs] g4. g8 |
+    a4 b c4. d8 |
+    e [c] c b c4 c | \bar "|."
   
 }
 
-alto = \relative do' {
+alto = \relative c' {
     \global
     
-    mi4 re8. re16 do4~ do8 do16 (re) |
-    do8 mi mi [re] re4 re |
-    fa8 la4 sold8 la4. sol8 |
-    sol [fa] re re mi4. mi8 |
-    mi sol16 (fa) mi (re) do (re) do4~ do8 do16 (re) |
-    do8 mi mi [re] re4. re8 |
-    fa la4 sold8 la4. sol8 |
-    sol [fa] re re mi4 mi |
+    e4 d8. d16 c4~ c8 c16 (d) |
+    c8 e e [d] d4 d |
+    f8 a4 gs8 a4. g8 |
+    g [f] d d e4. e8 |
+    e g16 (f) e (d) c (d) c4~ c8 c16 (d) |
+    c8 e e [d] d4. d8 |
+    f a4 gs8 a4. g8 |
+    g [f] d d e4 e |
   
 }
 
-tenor = \relative do' {
+tenor = \relative c' {
     \global
     
-    sol4 sol sol8 do mi mi16 (re) |
-    do8 do16 (si) la8 do do4 si |
-    do mi mi4. re8 | 
-    do la sol [sol] sol sol sol4 |
-    sol sol sol8 do mi mi16 (re) |
-    do8 do16 (si) la8 do do [do] si si |
-    do4 mi mi4. re8 |
-    do la sol [sol] sol4 sol |
+    g4 g g8 c e e16 (d) |
+    c8 c16 (b) a8 c c4 b |
+    c e e4. d8 | 
+    c a g [g] g g g4 |
+    g g g8 c e e16 (d) |
+    c8 c16 (b) a8 c c [c] b b |
+    c4 e e4. d8 |
+    c a g [g] g4 g |
   
 }
 
-bass = \relative do {
+bass = \relative c {
     \global
     
-    do4 si do8 do do do16 (si) |
-    la8 la re [re] sol,4 sol' |
-    fa mi la,4. si8 |
-    do fa sol [sol,] do do do4 |
-    do si do8 do do do16 (si) |
-    la8 [la] re re sol, [sol'] sol sol |
-    fa4 mi la,4. si8 |
-    do [fa] sol sol, do4 do |
+    c4 b c8 c c c16 (b) |
+    a8 a d [d] g,4 g' |
+    f e a,4. b8 |
+    c f g [g,] c c c4 |
+    c b c8 c c c16 (b) |
+    a8 [a] d d g, [g'] g g |
+    f4 e a,4. b8 |
+    c [f] g g, c4 c |
   
 }
 

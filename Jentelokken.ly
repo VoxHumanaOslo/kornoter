@@ -1,5 +1,5 @@
 \version "2.18.2"
-\language "italiano"
+\language "english"
 
 \header {
     title = "Masurka"
@@ -16,71 +16,71 @@
 }
 
 global = {
-    \key mi \minor
+    \key e \minor
     \numericTimeSignature
     \time 3/4
     \tempo "Lett og spenstig" 4 = 126
 }
 
-sopranoVoice = \relative do'' {
+sopranoVoice = \relative c'' {
     \global
     \dynamicUp
     
     %%%%% VERS:
     \bar ".|:"
-    \times 2/3 {mi8 red mi} si4~ si8. la16 | 
-    \times 2/3 {sol8 fad sol} si,2 | 
-    mi8. fad16 sol8. mi16 red fad8. | 
-    mi fad16 sol la8. si4 | 
-    \times 2/3 {mi8 red mi} si4~ si8. la16 | 
-    \times 2/3 {sol8 fad sol} si,2 | 
-    mi8. fad16 sol8. mi16 red fad8. | 
-    mi4 mi r | \bar ":|." \key mi \major \break
+    \times 2/3 {e8 ds e} b4~ b8. a16 | 
+    \times 2/3 {g8 fs g} b,2 | 
+    e8. fs16 g8. e16 ds fs8. | 
+    e fs16 g a8. b4 | 
+    \times 2/3 {e8 ds e} b4~ b8. a16 | 
+    \times 2/3 {g8 fs g} b,2 | 
+    e8. fs16 g8. e16 ds fs8. | 
+    e4 e r | \bar ":|." \key e \major \break
     
     %%%%% REFRENG:
     \repeat volta 2 {
-    sold8. si16 mi4 si |
-    la8. sold16 fad4 mi' |
-    red8. dod16 si la8. sold16 fad8. |
-    mi fad16 sold la8. si4 |
-     sold8. si16 mi4 si |
-    la8. sold16 fad4 mi' |
-    red8. dod16 si si8. dod8. red16 |}
+    gs8. b16 e4 b |
+    a8. gs16 fs4 e' |
+    ds8. cs16 b a8. gs16 fs8. |
+    e fs16 gs a8. b4 |
+     gs8. b16 e4 b |
+    a8. gs16 fs4 e' |
+    ds8. cs16 b b8. cs8. ds16 |}
     \alternative {
-        {mi4 mi r }
-        {mi mi r }
+        {e4 e r }
+        {e e r }
     }
     
     %%%%% VERS 2:
-    \key mi \minor
-    \times 2/3 {mi8 red mi} si4~ si8. la16 | 
-    \times 2/3 {sol8 fad sol} si,2 | 
-    mi8. fad16 sol8. mi16 red fad8. | 
-    mi fad16 sol la8. si4 | 
-    \times 2/3 {mi8 red mi} si4~ si8. la16 | 
-    \times 2/3 {sol8 fad sol} si,2 | 
-    mi8. fad16 sol8. mi16 red fad8. | 
-    mi4 mi r | \bar "||" 
+    \key e \minor
+    \times 2/3 {e8 ds e} b4~ b8. a16 | 
+    \times 2/3 {g8 fs g} b,2 | 
+    e8. fs16 g8. e16 ds fs8. | 
+    e fs16 g a8. b4 | 
+    \times 2/3 {e8 ds e} b4~ b8. a16 | 
+    \times 2/3 {g8 fs g} b,2 | 
+    e8. fs16 g8. e16 ds fs8. | 
+    e4 e r | \bar "||" 
     
-    \times 2/3 {mi'8---> red mi} si4~ si8. la16 | 
-    \times 2/3 {sol8 fad sol} si,2 | 
-    mi8. fad16 sol8. mi16 red fad8. | 
-    mi fad16 sol la8. si4 | 
-    \times 2/3 {mi8---> red mi} si4~ si8. la16 | 
-    \times 2/3 {sol8 fad sol} si,2 | 
-    mi8. fad16 sol8. mi16 red fad8. | 
-    mi4 mi r | \key mi \major 
+    \times 2/3 {e'8---> ds e} b4~ b8. a16 | 
+    \times 2/3 {g8 fs g} b,2 | 
+    e8. fs16 g8. e16 ds fs8. | 
+    e fs16 g a8. b4 | 
+    \times 2/3 {e8---> ds e} b4~ b8. a16 | 
+    \times 2/3 {g8 fs g} b,2 | 
+    e8. fs16 g8. e16 ds fs8. | 
+    e4 e r | \key e \major 
     
     %%%%% REFRENG 2:
     \repeat volta 2 {
-    sold8. si16 mi4 si |
-    la8. sold16 fad4 mi' |
-    red8. dod16 si la8. sold16 fad8. |
-    mi fad16 sold la8. si4 |
-     sold8. si16 mi4 si |
-    la8. sold16 fad4 mi' |
-    red8. dod16 si si8. dod8. red16 |
-    mi4 mi r }
+    gs8. b16 e4 b |
+    a8. gs16 fs4 e' |
+    ds8. cs16 b a8. gs16 fs8. |
+    e fs16 gs a8. b4 |
+     gs8. b16 e4 b |
+    a8. gs16 fs4 e' |
+    ds8. cs16 b b8. cs8. ds16 |
+    e4 e r }
 }
 
 verseSopranoVoice = \lyricmode {
@@ -121,66 +121,66 @@ verseSopranoVoice = \lyricmode {
     Å, kjæ -- re gje meg ein ma -- sur -- ka! sur -- ka!
 }
 
-altoVoice = \relative do' {
+altoVoice = \relative c' {
     \global
     \dynamicUp
     
     %%%%% VERS:
-    mi4~ \times 2/3 {mi8 red mi} si8. red16 |
-    mi4~ \times 2/3 {mi8 red mi} si4 |
-    mi si la | 
-    sol8. sol16 mi'8. mi16 si4 | 
-    mi4~ \times 2/3 {mi8 red mi} si8. red16 |
-    \times 2/3 {mi8 red mi} fad4 si,~ |
-    si8. si16 \times 2/3 {fad'8 (sol) la} si16 la8. |
-    sol8. (fad16) mi4 r |  \key mi \major
+    e4~ \times 2/3 {e8 ds e} b8. ds16 |
+    e4~ \times 2/3 {e8 ds e} b4 |
+    e b a | 
+    g8. g16 e'8. e16 b4 | 
+    e4~ \times 2/3 {e8 ds e} b8. ds16 |
+    \times 2/3 {e8 ds e} fs4 b,~ |
+    b8. b16 \times 2/3 {fs'8 (g) a} b16 a8. |
+    g8. (fs16) e4 r |  \key e \major
     
     
     %%%%% REFRENG:
     \repeat volta 2 {
-    sold8. fad16 mi4 red |
-    dod mi dod | 
-    la' fad red |
-    mi mi si |
-    si mi mi | 
-    mi dod mi |
-    fad sold sold8. fad16 |}
+    gs8. fs16 e4 ds |
+    cs e cs | 
+    a' fs ds |
+    e e b |
+    b e e | 
+    e cs e |
+    fs gs gs8. fs16 |}
     \alternative {
-        {mi4 mi r}
-        {mi mi mi~}
+        {e4 e r}
+        {e e e~}
     }
     
     %%%%% VERS 2:
-    \key mi \minor \bar "||"
-    mi~ \times 2/3 {mi8 red mi} si8. red16 |
-    mi4~ \times 2/3 {mi8 red mi} si4 |
-    mi si la | 
-    sol8. sol16 do do8. si4 |
-    mi4~ \times 2/3 {mi8 red mi} si8. red16 |
-    \times 2/3 {mi8 red mi} fad4 si,~ |
-    si8. si16 \times 2/3 {fad'8 (sol) la} si16 la8. |
-    sol8. (fad16) mi4 r | 
+    \key e \minor \bar "||"
+    e~ \times 2/3 {e8 ds e} b8. ds16 |
+    e4~ \times 2/3 {e8 ds e} b4 |
+    e b a | 
+    g8. g16 c c8. b4 |
+    e4~ \times 2/3 {e8 ds e} b8. ds16 |
+    \times 2/3 {e8 ds e} fs4 b,~ |
+    b8. b16 \times 2/3 {fs'8 (g) a} b16 a8. |
+    g8. (fs16) e4 r | 
     
-    mi~ \times 2/3 {mi8 red mi} si8. red16 |
-    mi4~ \times 2/3 {mi8 red mi} si4 |
-    mi si la | 
-    sol8. sol16 do do8. si4 |
-    mi4--->~ \times 2/3 {mi8 red mi} si8. red16 |
-    \times 2/3 {mi8 red mi} fad4 si,~ |
-    si8. si16 \times 2/3 {fad'8 (sol) la} si16 la8. |
-    sol8. (fad16) mi4 r | 
+    e~ \times 2/3 {e8 ds e} b8. ds16 |
+    e4~ \times 2/3 {e8 ds e} b4 |
+    e b a | 
+    g8. g16 c c8. b4 |
+    e4--->~ \times 2/3 {e8 ds e} b8. ds16 |
+    \times 2/3 {e8 ds e} fs4 b,~ |
+    b8. b16 \times 2/3 {fs'8 (g) a} b16 a8. |
+    g8. (fs16) e4 r | 
     
     %%%%% REFRENG 2:
-    \key mi \major
+    \key e \major
     \repeat volta 2 {
-    sold8. fad16 mi4 red |
-    dod mi dod | 
-    la' fad red |
-    mi mi si |
-    si mi mi | 
-    mi dod mi |
-    fad sold sold8. fad16 |
-    mi4 mi r 
+    gs8. fs16 e4 ds |
+    cs e cs | 
+    a' fs ds |
+    e e b |
+    b e e | 
+    e cs e |
+    fs gs gs8. fs16 |
+    e4 e r 
     }
     
   
@@ -222,52 +222,52 @@ verseAltoVoice = \lyricmode {
     Å, gje meg ein ma -- sur -- ka!
 }
 
-tenorVoice = \relative do' {
+tenorVoice = \relative c' {
     \global
     \dynamicUp
     
     %%%%% VERS:
-    si2-- si4 | 
-    \repeat unfold 4 {si2 si4 |}
-    si2.~ | si4 mi, fad | mi mi r | \key mi \major
+    b2-- b4 | 
+    \repeat unfold 4 {b2 b4 |}
+    b2.~ | b4 e, fs | e e r | \key e \major
   
   
     %%%%% REFRENG:
     \repeat volta 2 {
-    mi sold si |
-    mi, la la | 
-    fad la si |
-    sold si mi |
-    mi si sold |
-    la la sold |
-    la8. la16 red dod8. si la16 | }
+    e gs b |
+    e, a a | 
+    fs a b |
+    gs b e |
+    e b gs |
+    a a gs |
+    a8. a16 ds cs8. b a16 | }
     \alternative {
-        {sold4 sold r}
-        {sold sold r} 
+        {gs4 gs r}
+        {gs gs r} 
     } 
     
     %%%%% VERS 2:
-    \key mi \minor
-    si2 si4 | si2 si4 | si2 si4 | 
-    sol4 la16 sol8. fad4 |
-    sol la si | si2 si4~ | si mi, fad |
-    mi mi r | 
-    si'2 si4 | si2 si4 | si2 si4 | 
-    sol4 la16 sol8. fad4 |
-    do'---> si la | sol (la) si~ |
-    si mi, fad | mi mi r | 
+    \key e \minor
+    b2 b4 | b2 b4 | b2 b4 | 
+    g4 a16 g8. fs4 |
+    g a b | b2 b4~ | b e, fs |
+    e e r | 
+    b'2 b4 | b2 b4 | b2 b4 | 
+    g4 a16 g8. fs4 |
+    c'---> b a | g (a) b~ |
+    b e, fs | e e r | 
     
     %%%%% REFRENG 2:
-    \key mi \major
+    \key e \major
      \repeat volta 2 {
-    mi sold si |
-    mi, la la | 
-    fad la si |
-    sold si mi |
-    mi si sold |
-    la la sold |
-    la8. la16 red dod8. si la16 | 
-     sold4 sold r |}
+    e gs b |
+    e, a a | 
+    fs a b |
+    gs b e |
+    e b gs |
+    a a gs |
+    a8. a16 ds cs8. b a16 | 
+     gs4 gs r |}
 }
 
 verseTenorVoice = \lyricmode {
@@ -291,44 +291,44 @@ verseTenorVoice = \lyricmode {
   
 }
 
-bassVoice = \relative do {
+bassVoice = \relative c {
     \global
     \dynamicUp
     
     %%%%% VERS:
-    mi2-- si4 | \repeat unfold 4 {mi2 si4} |
-    mi2 re4 | do2 si4 | mi mi r | \key mi \major
+    e2-- b4 | \repeat unfold 4 {e2 b4} |
+    e2 d4 | c2 b4 | e e r | \key e \major
     
     %%%%% REFRENG:
     \repeat volta 2 {
-     mi2 mi4 | mi2 mi4 |
-     mi mi si | dod8. dod16 si la8. sold (la16) |
-     si4 sold si | dod mi la |
-     mi si la8. si16 |}
+     e2 e4 | e2 e4 |
+     e e b | cs8. cs16 b a8. gs (a16) |
+     b4 gs b | cs e a |
+     e b a8. b16 |}
    \alternative {
-       {mi4 mi r}
-       {mi mi r}
+       {e4 e r}
+       {e e r}
    } 
    
    %%%%% VERS 2:
-   \key mi \minor
-   mi2 si4 | mi2 si4 | 
-   sol (la) si | do (la) si | 
-   mi2 si4 | mi2 re4 | 
-   do2 si4 | mi mi r | 
-   mi2 si4 | mi2 si4 | 
-   sol (la) si | do (la) si | 
-   fa'2---> do4 | re2 re4 | 
-   do2 si4 | mi mi r | 
+   \key e \minor
+   e2 b4 | e2 b4 | 
+   g (a) b | c (a) b | 
+   e2 b4 | e2 d4 | 
+   c2 b4 | e e r | 
+   e2 b4 | e2 b4 | 
+   g (a) b | c (a) b | 
+   f'2---> c4 | d2 d4 | 
+   c2 b4 | e e r | 
    
    %%%%% REFRENG 2:
-   \key mi \major
+   \key e \major
    \repeat volta 2 {
-     mi2 mi4 | mi2 mi4 |
-     mi mi si | dod8. dod16 si la8. sold (la16) |
-     si4 sold si | dod mi la |
-     mi si la8. si16 |
-     mi4 mi r |}
+     e2 e4 | e2 e4 |
+     e e b | cs8. cs16 b a8. gs (a16) |
+     b4 gs b | cs e a |
+     e b a8. b16 |
+     e4 e r |}
 }
 
 verseBassVoice = \lyricmode {
@@ -351,35 +351,35 @@ verseBassVoice = \lyricmode {
 }
 
 sopranoVoicePart = \new Staff \with {
-    instrumentName = "S."
-    shortInstrumentName = "S."
+    instrumentName = "S"
+    shortInstrumentName = "S"
     midiInstrument = "choir aahs"
 } { \sopranoVoice }
 \addlyrics { \verseSopranoVoice }
 
 altoVoicePart = \new Staff \with {
-    instrumentName = "A."
-    shortInstrumentName = "A."
+    instrumentName = "A"
+    shortInstrumentName = "A"
     midiInstrument = "choir aahs"
 } { \altoVoice }
 \addlyrics { \verseAltoVoice }
 
 tenorVoicePart = \new Staff \with {
-    instrumentName = "T."
-    shortInstrumentName = "T."
+    instrumentName = "T"
+    shortInstrumentName = "T"
     midiInstrument = "choir aahs"
 } { \clef "treble_8" \tenorVoice }
 \addlyrics { \verseTenorVoice }
 
 bassVoicePart = \new Staff \with {
-    instrumentName = "B."
-    shortInstrumentName = "B."
+    instrumentName = "B"
+    shortInstrumentName = "B"
     midiInstrument = "choir aahs"
 } { \clef bass \bassVoice }
 \addlyrics { \verseBassVoice }
 
 \score {
-    <<
+    \new ChoirStaff <<
         \sopranoVoicePart
         \altoVoicePart
         \tenorVoicePart

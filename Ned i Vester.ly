@@ -1,5 +1,5 @@
 \version "2.18.2"
-\language "italiano"
+\language "english"
 
 \header {
     title = "Ned i vester soli glader"
@@ -15,7 +15,7 @@
 }
 
 global = {
-    \key sib \minor
+    \key bf \minor
     \numericTimeSignature
     \time 3/4
     \override BreathingSign.text = \markup {
@@ -23,147 +23,147 @@ global = {
   }
 }
 
-soprano = \relative do'' {
+soprano = \relative c'' {
     \global
     
-    \oneVoice r2 \voiceOne sib,8^\p reb |
-    fa4 fa solb8 fa | 
-    fa (mib) fa4 reb8 mib |
-    fa4 fa solb8 fa | \break
-    mib (reb) sib4 sib8 do |
-    reb4 reb mib8 mib | 
-    fa2 fa8 solb |
-    lab4 lab sib8 lab | \break
-    lab (mib) mib4 mib8 fa | 
-    solb4. solb8 solb [fa] |
-    mib (reb) sib4 sib8 do |
-    reb4 reb mib8^\markup\italic "rit." mib | \pageBreak
-    fa2\fermata \breathe sib,8 do | 
-    reb4 mib reb8 do | 
-    sib2\fermata \breathe mib8^\markup\italic "a tempo" solb |
+    \oneVoice r2 \voiceOne bf,8^\p df |
+    f4 f gf8 f | 
+    f (ef) f4 df8 ef |
+    f4 f gf8 f | \break
+    ef (df) bf4 bf8 c |
+    df4 df ef8 ef | 
+    f2 f8 gf |
+    af4 af bf8 af | \break
+    af (ef) ef4 ef8 f | 
+    gf4. gf8 gf [f] |
+    ef (df) bf4 bf8 c |
+    df4 df ef8^\markup\italic "rit." ef | \pageBreak
+    f2\fermata \breathe bf,8 c | 
+    df4 ef df8 c | 
+    bf2\fermata \breathe ef8^\markup\italic "a tempo" gf |
     
-    sib4 sib dob8 sib | \break
-    sib (lab) sib4 solb8 lab |
-    sib4.^\markup\italic "cresc." sib8 dob [sib] |
-    lab (solb) mib4 mib8 fa |
-    solb4 solb lab16 (solb) lab8 | \break
-    sib2 sib8 dob |
-    reb4^\ff reb mib8 reb |
-    reb (lab) lab4 lab8 sib |
-    <dob lab>4 r8 q <dob fa,>^\markup\italic "dim." [<sib fa>] | \break
-    lab8 (solb) mib4 mib8 fa |
-    solb4 solb lab8 lab |
-    sib2\fermata^\markup\italic "rit." \breathe 
-        mib,8^\pp fa |
-    solb4 lab solb8 fa | mib2. | \bar "|."
+    bf4 bf cf8 bf | \break
+    bf (af) bf4 gf8 af |
+    bf4.^\markup\italic "cresc." bf8 cf [bf] |
+    af (gf) ef4 ef8 f |
+    gf4 gf af16 (gf) af8 | \break
+    bf2 bf8 cf |
+    df4^\ff df ef8 df |
+    df (af) af4 af8 bf |
+    <cf af>4 r8 q <cf f,>^\markup\italic "dim." [<bf f>] | \break
+    af8 (gf) ef4 ef8 f |
+    gf4 gf af8 af |
+    bf2\fermata^\markup\italic "rit." \breathe 
+        ef,8^\pp f |
+    gf4 af gf8 f | ef2. | \bar "|."
   
 }
 
-alto = \relative do' {
+alto = \relative c' {
     \global
     
-    s2 sib8 sib | 
-    reb4 reb sib8 sib |
-    fa'4 reb sib8 mib |
-    mib4 reb sib8 sib |
-    lab4 sib lab8 lab |
-    sib4 sib do8 do |
-    reb2 reb8 reb |
-    do4 do reb8 reb |
-    mib4 mib reb8 reb |
-    reb4. reb8 do [do] |
-    sib4 sib sib8 sib |
-    sib4 sib reb8 reb |
-    do2 sib8 sib |
-    sib4 sib lab8 lab |
-    fa2 mib'8 mib |
+    s2 bf8 bf | 
+    df4 df bf8 bf |
+    f'4 df bf8 ef |
+    ef4 df bf8 bf |
+    af4 bf af8 af |
+    bf4 bf c8 c |
+    df2 df8 df |
+    c4 c df8 df |
+    ef4 ef df8 df |
+    df4. df8 c [c] |
+    bf4 bf bf8 bf |
+    bf4 bf df8 df |
+    c2 bf8 bf |
+    bf4 bf af8 af |
+    f2 ef'8 ef |
     
-    solb4 solb mib8 mib |
-    sib'4 solb mib8 lab |
-    lab4. solb8 mib [mib] |
-    reb4 reb reb8 reb |
-    mib4 mib solb8 fa |
-    solb2 solb8 solb |
-    fa4 sib8 [(lab)] solb fa |
-    solb [(fa)] mib [(fa)] solb fa |
-    solb4 r8 solb mib [mib] |
-    mib4 mib mib8 mib |
-    fa4 fa8 (mib) solb [fa] |
-    fa2 reb8 reb |
-    mib4 mib reb8 reb |
-    sib2. |
+    gf4 gf ef8 ef |
+    bf'4 gf ef8 af |
+    af4. gf8 ef [ef] |
+    df4 df df8 df |
+    ef4 ef gf8 f |
+    gf2 gf8 gf |
+    f4 bf8 [(af)] gf f |
+    gf [(f)] ef [(f)] gf f |
+    gf4 r8 gf ef [ef] |
+    ef4 ef ef8 ef |
+    f4 f8 (ef) gf [f] |
+    f2 df8 df |
+    ef4 ef df8 df |
+    bf2. |
   
 }
 
-tenor = \relative do' {
+tenor = \relative c' {
     \global
     
-    \oneVoice r2 \voiceOne sib8 sib
-    fa4 fa mib8 mib | 
-    fa4 fa fa8 lab |
-    lab4 lab mib8 mib |
-    lab4 solb lab8 lab |
-    sib4 sib lab8 lab |
-    lab2 lab8 sib |
-    lab4 lab sib8 sib |
-    sib4 sib sib8 sib |
-    sib4. sib8 sib [sib] |
-    fa4 fa fa8 fa |
-    fa4 fa sib8 sib |
-    sib4 (la\fermata) \breathe lab8 lab |
-    solb4 solb mib8 mib |
-    reb2 \oneVoice r4 | \voiceOne 
+    \oneVoice r2 \voiceOne bf8 bf
+    f4 f ef8 ef | 
+    f4 f f8 af |
+    af4 af ef8 ef |
+    af4 gf af8 af |
+    bf4 bf af8 af |
+    af2 af8 bf |
+    af4 af bf8 bf |
+    bf4 bf bf8 bf |
+    bf4. bf8 bf [bf] |
+    f4 f f8 f |
+    f4 f bf8 bf |
+    bf4 (a\fermata) \breathe af8 af |
+    gf4 gf ef8 ef |
+    df2 \oneVoice r4 | \voiceOne 
     
-    sib'4 sib lab8 lab |
-    sib4 sib sib8 reb |
-    reb4. reb8 lab [lab] |
-    reb4 reb reb8 reb |
-    sib4 sib reb8 reb |
-    reb4.. reb16_\markup "(og)" reb8 mib |
-    reb4 reb mib8 mib |
-    mib4 mib mib8 mib |
-    mib4 r8 mib reb [reb] |
-    sib4 sib sib8 sib |
-    dob4 dob fa8 mib |
-    mib4 (re\fermata) \breathe reb8 reb |
-    dob4 dob lab8 lab |
-    sib2. |
+    bf'4 bf af8 af |
+    bf4 bf bf8 df |
+    df4. df8 af [af] |
+    df4 df df8 df |
+    bf4 bf df8 df |
+    df4.. df16_\markup "(og)" df8 ef |
+    df4 df ef8 ef |
+    ef4 ef ef8 ef |
+    ef4 r8 ef df [df] |
+    bf4 bf bf8 bf |
+    cf4 cf f8 ef |
+    ef4 (d\fermata) \breathe df8 df |
+    cf4 cf af8 af |
+    bf2. |
   
 }
 
-bass = \relative do {
+bass = \relative c {
     \global
     
-    s2 sib'8 sib |
-    sib,4_\pp sib mib8 mib | 
-    sib4 sib sib8 do |
-    reb4 reb mib8 mib |
-    fa4 solb fa8 fa |
-    mib4 mib lab,8 lab |
-    reb2 reb8 mib |
-    fa4 fa fa8 fa |
-    solb4 solb solb8 solb |
-    lab4. lab8 lab, [lab] |
-    sib4 do reb8 reb |
-    solb,4 solb <mib mib'>8_\markup\italic "rit." q |
-    <re re'>2_\fermata reb'8 reb |
-    do4 do fa,8 fa |
-    sib2_\fermata s4 |
+    s2 bf'8 bf |
+    bf,4_\pp bf ef8 ef | 
+    bf4 bf bf8 c |
+    df4 df ef8 ef |
+    f4 gf f8 f |
+    ef4 ef af,8 af |
+    df2 df8 ef |
+    f4 f f8 f |
+    gf4 gf gf8 gf |
+    af4. af8 af, [af] |
+    bf4 c df8 df |
+    gf,4 gf <ef ef'>8_\markup\italic "rit." q |
+    <d d'>2_\fermata df'8 df |
+    c4 c f,8 f |
+    bf2_\fermata s4 |
     
-    mib4_\markup\italic "a tempo" mib lab8 lab |
-    mib4 mib mib8 fa |
-    solb4._\markup\italic "cresc." solb8 lab [lab] |
-    sib4 dob sib8 sib |
-    lab4 lab reb,8 reb |
-    solb2_\ff solb8 lab |
-    sib4 sib sib8 sib |
-    dob4 dob dob8 dob |
-    reb4 r8 reb reb,_\markup\italic "dim." [reb] |
-    mib4 fa solb8 solb |
-    sib4 sib lab8 lab |
-    sol2_\fermata_\markup\italic "rit." do,8_\pp do |
-    fa,4 fa sib8 sib |
-    mib2. |
+    ef4_\markup\italic "a tempo" ef af8 af |
+    ef4 ef ef8 f |
+    gf4._\markup\italic "cresc." gf8 af [af] |
+    bf4 cf bf8 bf |
+    af4 af df,8 df |
+    gf2_\ff gf8 af |
+    bf4 bf bf8 bf |
+    cf4 cf cf8 cf |
+    df4 r8 df df,_\markup\italic "dim." [df] |
+    ef4 f gf8 gf |
+    bf4 bf af8 af |
+    g2_\fermata_\markup\italic "rit." c,8_\pp c |
+    f,4 f bf8 bf |
+    ef2. |
   
 }
 

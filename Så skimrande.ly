@@ -1,5 +1,5 @@
 \version "2.18.2"
-\language "italiano"
+\language "english"
 
 \header {
     title = "Så skimrande var aldirg havet"
@@ -13,143 +13,143 @@
 }
 
 global = {
-    \key mib \major
+    \key ef \major
     \time 4/4
     \partial 8
 }
 
-soprano = \relative do'' {
+soprano = \relative c'' {
     \global
     
-    sib,8 |
+    bf,8 |
     \repeat volta 2 {
-    sib'4. lab8 sol8. fa16 mib8 fa |
-    sol4 sol~ sol \oneVoice r8 \voiceOne sol |
-    fa4. mi8 fa sol lab sib |
-    do4. re,8 re4. \oneVoice r8 \voiceOne |
-    re4 re re8. re16 re8 re |
-    mib4 mib~ mib8 \oneVoice r \voiceOne \times 2/3 {mib re mib} |
-    fa4 fa4~ fa8 \oneVoice r \voiceOne sol4 |
-    lab4 lab8 lab \times 2/3 {lab sol lab} do sib |
-    lab4. sol8 sol4 \oneVoice r8 \voiceOne sib, |
+    bf'4. af8 g8. f16 ef8 f |
+    g4 g~ g \oneVoice r8 \voiceOne g |
+    f4. e8 f g af bf |
+    c4. d,8 d4. \oneVoice r8 \voiceOne |
+    d4 d d8. d16 d8 d |
+    ef4 ef~ ef8 \oneVoice r \voiceOne \times 2/3 {ef d ef} |
+    f4 f4~ f8 \oneVoice r \voiceOne g4 |
+    af4 af8 af \times 2/3 {af g af} c bf |
+    af4. g8 g4 \oneVoice r8 \voiceOne bf, |
     
     
-    sib'4. lab8 sol fa mi fa |
-    sol4 sol~ sol \oneVoice r8 \voiceOne sol |
-    fa mi fa sol lab sol lab sib |
-    do4. re,8 re re \oneVoice r16 \voiceOne re16 re re |
-    mib4 mib mib8. mib16 re8 mib |
-    fa4 fa~ fa8 \oneVoice r \voiceOne \times 2/3 {fa fa sol} |
-    lab4 lab lab8 sol16 lab do8 sib |}
+    bf'4. af8 g f e f |
+    g4 g~ g \oneVoice r8 \voiceOne g |
+    f e f g af g af bf |
+    c4. d,8 d d \oneVoice r16 \voiceOne d16 d d |
+    ef4 ef ef8. ef16 d8 ef |
+    f4 f~ f8 \oneVoice r \voiceOne \times 2/3 {f f g} |
+    af4 af af8 g16 af c8 bf |}
     \alternative {
-        {lab4. sol8 sol4 \oneVoice r8 \voiceOne sib, |}
-        {lab'4. sol8 sol4 \oneVoice r |}
+        {af4. g8 g4 \oneVoice r8 \voiceOne bf, |}
+        {af'4. g8 g4 \oneVoice r |}
     }
     
-    sib,4 sol' do, lab' | 
-    sib, re mib2\fermata | \bar "|."
+    bf,4 g' c, af' | 
+    bf, d ef2\fermata | \bar "|."
     
   
 }
 
-alto = \relative do' {
+alto = \relative c' {
     \global
     
-    sib8
+    bf8
     \repeat volta 2 {
-    fa' sol~ sol fa mib8. re16 re8 re |
-    mib4 mib8 re reb4 s8 do |
-    do4. do8 do do do fa |
-    fa mib~ mib sib do4. s8 |
-    do4 do do8. do16 do8 si |
-    sol lab si do re s \times 2/3 {do si do} |
-    do4 do~ do8 s do4 |
-    fa fa8 fa \times 2/3 {fa fa fa} lab sol |
-    fa4. fa8 mib4 s8 sib |
+    f' g~ g f ef8. d16 d8 d |
+    ef4 ef8 d df4 s8 c |
+    c4. c8 c c c f |
+    f ef~ ef bf c4. s8 |
+    c4 c c8. c16 c8 b |
+    g af b c d s \times 2/3 {c b c} |
+    c4 c~ c8 s c4 |
+    f f8 f \times 2/3 {f f f} af g |
+    f4. f8 ef4 s8 bf |
     
     
-    fa' sol~ sol fa mib re re re |
-    mib4 mib fa s8 mi |
-    fa do do do fa fa fa mi |
-    mib?4. sib8 sib sib s16 sib sib sib |
-    sib4 sib sib8. sib16 sib8 sib |
-    do4 do~ do8 s \times 2/3 {do re mi} |
-    mib?4 mib re8 dod16 re mib8 fa |}
+    f' g~ g f ef d d d |
+    ef4 ef f s8 e |
+    f c c c f f f e |
+    ef?4. bf8 bf bf s16 bf bf bf |
+    bf4 bf bf8. bf16 bf8 bf |
+    c4 c~ c8 s \times 2/3 {c d e} |
+    ef?4 ef d8 cs16 d ef8 f |}
     \alternative {
-        {fa4. mib8 mib4 s8 sib |}
-        {fa'4. mib8 mib4 s |}
+        {f4. ef8 ef4 s8 bf |}
+        {f'4. ef8 ef4 s |}
     }
     
-    sol,4 sib lab do | 
-    mib sib sib2 | 
+    g,4 bf af c | 
+    ef bf bf2 | 
         
   
 }
 
-tenor = \relative do' {
+tenor = \relative c' {
     \global
     
-    sib8 
+    bf8 
     \repeat volta 2 {
-        sib4. si8 si8. si16 si8 si |
-        do4 do sib \oneVoice r8 \voiceOne sib |
-        lab4. sib8 do do do do |
-        sib4 lab8 sol fa4. \oneVoice r8 \voiceOne |
-        fa4 sol lab8. lab16 sol8 sol |
-        sol4 sol sib8 \oneVoice r \voiceOne \times 2/3 {la lab sol} |
-        lab4 lab~ lab8 \oneVoice r \voiceOne lab4 |
-        do8 fa mi mi \times 2/3 {mib mib mib} mi re |
-        do4 si8 si sib4 \oneVoice r8 \voiceOne sib |
+        bf4. b8 b8. b16 b8 b |
+        c4 c bf \oneVoice r8 \voiceOne bf |
+        af4. bf8 c c c c |
+        bf4 af8 g f4. \oneVoice r8 \voiceOne |
+        f4 g af8. af16 g8 g |
+        g4 g bf8 \oneVoice r \voiceOne \times 2/3 {a af g} |
+        af4 af~ af8 \oneVoice r \voiceOne af4 |
+        c8 f e e \times 2/3 {ef ef ef} e d |
+        c4 b8 b bf4 \oneVoice r8 \voiceOne bf |
         
         
-        sib4. sib8 si4 si8 si |
-        do re do la sib4 \oneVoice r8 \voiceOne do |
-        do sib lab do do do do lab |
-        lab4. fa8 fa fa \oneVoice r16 \voiceOne fa fa fa |
-        mib4 sib' sib8. sib16 sib8 sib |
-        lab4 lab~ lab8 \oneVoice r \voiceOne \times 2/3 {sib lab sol} |
-        fa4 fa fa8 mi16 fa lab8 do |
+        bf4. bf8 b4 b8 b |
+        c d c a bf4 \oneVoice r8 \voiceOne c |
+        c bf af c c c c af |
+        af4. f8 f f \oneVoice r16 \voiceOne f f f |
+        ef4 bf' bf8. bf16 bf8 bf |
+        af4 af~ af8 \oneVoice r \voiceOne \times 2/3 {bf af g} |
+        f4 f f8 e16 f af8 c |
     }
     \alternative {
-        {re4. mib8 mib4 \oneVoice r8 \voiceOne sib}
-        {re4. mib8 mib4 \oneVoice r}
+        {d4. ef8 ef4 \oneVoice r8 \voiceOne bf}
+        {d4. ef8 ef4 \oneVoice r}
     }
   
-    \voiceOne mib, mib mib fa |
-    fa8 sol lab4 sol2\fermata | 
+    \voiceOne ef, ef ef f |
+    f8 g af4 g2\fermata | 
 }
 
-bass = \relative do {
+bass = \relative c {
     \global
     
-    sib'8 |
+    bf'8 |
     \repeat volta 2 {
-        mib,4. mib8 mib8. mib16 mib8 mib |
-        mib4 mib mi s8 mi |
-        fa4. sol8 lab mi fa mib | \break
-        re do~ do sib lab4. s8 |
-        sol4 sol sol8. sol16 sol8 sol |
-        do4 do~ do8 s \times 2/3 {do do sol} |
-        fa4 fa'~ fa8 s mib4 | \break
-        re do8 do \times 2/3 {si si si} sib sib |
-        mib4. mib8 mib4 s8 sib' |
+        ef,4. ef8 ef8. ef16 ef8 ef |
+        ef4 ef e s8 e |
+        f4. g8 af e f ef | \break
+        d c~ c bf af4. s8 |
+        g4 g g8. g16 g8 g |
+        c4 c~ c8 s \times 2/3 {c c g} |
+        f4 f'~ f8 s ef4 | \break
+        d c8 c \times 2/3 {b b b} bf bf |
+        ef4. ef8 ef4 s8 bf' |
         
         
-        mib,4. mib8 mib4 mib8 mib | \pageBreak
-        mib4 mib reb s8 do |
-        lab' sol fa mi mib mib re do |
-        sib4. sib8 sib sib s16 lab lab lab | \break
-        sol4 sol sol8. sol16 sol8 sol |
-        lab4 lab~ lab8 s \times 2/3 {do do do} |
-        si4 si sib8 sib sib re | \break 
+        ef,4. ef8 ef4 ef8 ef | \pageBreak
+        ef4 ef df s8 c |
+        af' g f e ef ef d c |
+        bf4. bf8 bf bf s16 af af af | \break
+        g4 g g8. g16 g8 g |
+        af4 af~ af8 s \times 2/3 {c c c} |
+        b4 b bf8 bf bf d | \break 
     }
     \alternative {
-        {mib2 mib4 s8 sib'}
-        {mib,2 mib4 s}
+        {ef2 ef4 s8 bf'}
+        {ef,2 ef4 s}
     }
     
-    <mib, sib'> mib lab lab |
-    sib sib <mib, sib'>2 |
+    <ef, bf'> ef af af |
+    bf bf <ef, bf'>2 |
     
 }
 
